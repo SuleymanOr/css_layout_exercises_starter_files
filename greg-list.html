@@ -1,0 +1,66 @@
+<!-- Button spacing works in Chrome. Safari still leaves space between buttons, 
+the problem being that I can't set font-size at the same time to 0 and 18px. 
+What is a good solution? -->
+
+ <!-- Set the size of the button and the input  button manually, 
+ which is bad I think, I do not know exactly if they are of the same height -->
+
+ <!-- Could not set the background of the button to the magnifying glass, and also, small padding below the button -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greg's List</title>
+	<meta name="Description" content="Job placement website">
+	<link rel="stylesheet" type="text/css" href="styles/greg-list-styles.css">
+</head>
+<body>
+	<nav>
+		<div class="main-title">Greg's List</div>
+		<ul class="nav-buttons">
+			<li><a href="">Post</a></li>
+			<li><a href="">Account</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<form>
+			<label for="search">Search Jobs</label>	<br>
+			<input class="input-field" type="text" name="search-jobs" id="search" placeholder="Search software jobs">
+			<button class="search-button" type="submit"></button>
+		</form>
+		<div class="button-string">
+			<button class="button-page">< prev</button>
+			<button class="button-page"> 1 to 100 of 179</button>
+			<button class="button-page">next ></button>
+		</div>
+		<div>
+			<ul class="main-list">
+				<li>
+					<ul class="job-list">
+						<li>June 22</li>
+						<li><span class="blue">Technical Project Manager</span></li>
+						<li>Midtown East</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="job-list">
+						<li>June 21</li>
+						<li><span class="blue">Frontend Developer</span></li>
+						<li>SoHo</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="job-list">
+						<li>June 20</li>
+						<li><span class="blue">Senior Python Developer / Confounder</span></li>
+						<li>Flatiron</li>
+					</ul>
+				</li>
+			</ul>
+
+
+		</div>
+	</main>
+</html>
